@@ -1,0 +1,159 @@
+﻿这里是用户函数和过程的编号对应表，用于万一软件发生崩溃，便于快速找到函数。可以在工程属性里设置是否开启。
+VisualFreeBasic 函数头汇编特征：
+ 55     | push ebp 
+ 89E5   | mov ebp,esp
+接下来的下一行或下下一行汇编
+OD： mov dword ptr ds:[420308],10003
+CE： mov [00420308],00010003
+[00420308] 表示内存位置，是16进制数，此内存地址中保存着当前执行到那个函数编号，软件不同地址不同，不会固定的。 
+ 00010003  表示编号，是16进制数，可以查找下面内容找到是什么函数。  
+ ----------------------------------------------------------------- 
+10001  Function mv_Class_Form.Show(hWndParent As .hWnd = HWND_DESKTOP, Modal As Boolean = False, UserData As Integer = 0) As .hWnd	 '加载窗口并且显示, 模态显示用True {2.True.False} UserData 是传递给创建事件的参数，不保存数值 'E:\back\makevirus\forms\Form1.frm
+10002 -> 2
+10003 -> 3
+10004 -> 6
+10005 -> 7
+10006 -> 11
+10007 -> 14
+10008 -> 53
+10009 -> 77
+1000A -> 80
+1000B -> 100
+1000C -> 103
+1000D -> 122
+1000E -> 125
+1000F -> 144
+10010 -> 147
+10011 -> 167
+10012 -> 170
+10013 -> 190
+10014 -> 194
+10015 -> 218
+10016 -> 222
+10017 -> 246
+10018 -> 250
+10019 -> 274
+1001A -> 277
+1001B -> 297
+1001C -> 300
+1001D -> 316
+1001E -> 319
+1001F -> 339
+10020 -> 342
+10021 -> 364
+10022 -> 367
+10023 -> 389
+10024 -> 392
+10025 -> 412
+10026 -> 415
+10027 -> 435
+10028 -> 439
+10029 -> 463
+1002A -> 466
+1002B -> 486
+1002C -> 490
+1002D -> 500
+1002E  Function mv_FORMPROCEDURE(ByVal hWndForm As HWND, ByVal wMsg As uInteger, ByVal wParam As WPARAM, ByVal lParam As LPARAM) As LResult 'mv 窗口回调过程 'E:\back\makevirus\forms\Form1.frm
+1002F -> 3
+10030 -> 4
+10031 -> 8
+10032 -> 9
+10033 -> 11
+10034 -> 13
+10035 -> 30
+10036 -> 34
+10037 -> 35
+10038 -> 45
+10039 -> 46
+1003A -> 50
+1003B -> 52
+1003C -> 53
+1003D -> 55
+1003E -> 56
+1003F -> 58
+10040 -> 60
+10041 -> 63
+10042 -> 84
+10043 -> 86
+10044 -> 100
+10045 -> 102
+10046 -> 111
+10047 -> 112
+10048 -> 115
+10049 -> 116
+1004A -> 119
+1004B -> 120
+1004C -> 124
+1004D -> 126
+1004E -> 127
+1004F -> 133
+10050 -> 134
+10051 -> 138
+10052 -> 140
+10053 -> 142
+10054 -> 144
+10055 -> 145
+10056 -> 148
+10057 -> 149
+10058 -> 150
+10059 -> 151
+1005A -> 153
+1005B -> 155
+1005C -> 159
+1005D -> 208
+1005E -> 211
+1005F -> 212
+10060 -> 213
+10061 -> 214
+10062 -> 215
+10063 -> 222
+10064 -> 225
+10065 -> 227
+10066 -> 229
+10067 -> 231
+10068 -> 233
+10069 -> 234
+1006A -> 236
+1006B -> 239
+1006C  Function mv_CODEPROCEDURE(ByVal hWndControl As HWND, ByVal wMsg As uInteger, ByVal wParam As WPARAM, ByVal lParam As LPARAM) As LRESULT  ' mv 控件回调 'E:\back\makevirus\forms\Form1.frm
+1006D -> 7
+1006E -> 19
+1006F -> 21
+10070 -> 22
+10071 -> 23
+10072 -> 24
+10073 -> 26
+10074 -> 28
+10075 -> 39
+10076 -> 44
+10077 -> 45
+10078  Sub mv_Command1_BN_Clicked(hWndForm As hWnd, hWndControl As hWnd)  '单 'E:\back\makevirus\forms\Form1.frm
+10079 -> 2
+1007A -> 5
+1007B -> 6
+1007C -> 9
+1007D -> 10
+1007E -> 13
+1007F -> 17
+10080 -> 21
+10081 -> 25
+10082 -> 28
+10083 -> 30
+10084 -> 35
+10085 -> 39
+10086 -> 43
+10087 -> 47
+10088  Sub mv_WM_Create(hWndForm As hWnd,UserData As Integer)  '完成创建窗口及所有的控件后，此时窗口还未显示。注：自定义消息里 WM_Create 此时还未创建控件和初始赋值。 'E:\back\makevirus\forms\Form1.frm
+10089  Sub mv_Command2_BN_Clicked(hWndForm As hWnd, hWndControl As hWnd)  '单击 'E:\back\makevirus\forms\Form1.frm
+1008A  Sub mv_Check3_BN_Clicked(hWndForm As hWnd, hWndControl As hWnd)  '单击 'E:\back\makevirus\forms\Form1.frm
+1008B -> 1
+1008C -> 7
+1008D  Sub mv_Check1_BN_Clicked(hWndForm As hWnd, hWndControl As hWnd)  '单击 'E:\back\makevirus\forms\Form1.frm
+1008E -> 1
+1008F -> 7
+10090  Function mv_VEH1_VectExcepHandler(ByRef excp As EXCEPTION_POINTERS)As Integer  '向量化异常处理（程序崩溃后处理） 'E:\back\makevirus\forms\Form1.frm
+10091  Function FF_PUMPHOOK( uMsg As Msg ) As Long '消息钩子 '#FF_PumpHook#
+10092  Function FF_WINMAIN(ByVal hInstance As HINSTANCE) As Long '程序入口函数 '#FF_WinMain#
+10093  Sub FF_WINEND(ByVal hInstance As HINSTANCE) '程序出口，程序终止后的最后代码。 '#FF_WinMain#
+10094  Function ReplaceASM(TiStr As String, TiFind As String, TiRep As String) As String 'E:\back\makevirus\release\CODEGEN_makevirus_UTILITY.inc
+10095 -> 4

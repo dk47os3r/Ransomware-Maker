@@ -1,0 +1,1 @@
+"C:\mlgb\VFB\Compile\fbc64.exe" -x "makevirus.exe" CODEGEN_makevirus_MAIN.bas -s gui -v _makevirus_RESOURCE.rc > _makevirus_compile_log.txt 2>&1

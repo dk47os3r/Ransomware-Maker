@@ -1,0 +1,21 @@
+﻿这里是用户函数和过程的编号对应表，用于万一软件发生崩溃，便于快速找到函数。可以在工程属性里设置是否开启。
+VisualFreeBasic 函数头汇编特征：
+ 55     | push ebp 
+ 89E5   | mov ebp,esp
+接下来的下一行或下下一行汇编
+OD： mov dword ptr ds:[420308],10003
+CE： mov [00420308],00010003
+[00420308] 表示内存位置，是16进制数，此内存地址中保存着当前执行到那个函数编号，软件不同地址不同，不会固定的。 
+ 00010003  表示编号，是16进制数，可以查找下面内容找到是什么函数。  
+ ----------------------------------------------------------------- 
+10001  Function mv_FORMPROCEDURE(ByVal hWndForm As HWND, ByVal wMsg As uInteger, ByVal wParam As WPARAM, ByVal lParam As LPARAM) As LResult 'mv 窗口回调过程 '[FILE:E:\Projects\makevirus\forms\Form1.frm|-294]
+10002  Function mv_CODEPROCEDURE(ByVal hWndControl As HWND, ByVal wMsg As uInteger, ByVal wParam As WPARAM, ByVal lParam As LPARAM) As LRESULT  ' mv 控件回调 '[FILE:E:\Projects\makevirus\forms\Form1.frm|-52]
+10003  Sub mv_Command1_BN_Clicked(hWndForm As hWnd, hWndControl As hWnd)  '单 '[FILE:E:\Projects\makevirus\forms\Form1.frm|4]
+10004  Sub mv_WM_Create(hWndForm As hWnd,UserData As Integer)  '完成创建窗口及所有的控件后，此时窗口还未显示。注：自定义消息里 WM_Create 此时还未创建控件和初始赋值。 '[FILE:E:\Projects\makevirus\forms\Form1.frm|53]
+10005  Sub mv_Command2_BN_Clicked(hWndForm As hWnd, hWndControl As hWnd)  '单击 '[FILE:E:\Projects\makevirus\forms\Form1.frm|58]
+10006  Sub mv_Check3_BN_Clicked(hWndForm As hWnd, hWndControl As hWnd)  '单击 '[FILE:E:\Projects\makevirus\forms\Form1.frm|62]
+10007  Sub mv_Check1_BN_Clicked(hWndForm As hWnd, hWndControl As hWnd)  '单击 '[FILE:E:\Projects\makevirus\forms\Form1.frm|73]
+10008  Function FF_PUMPHOOK( uMsg As Msg ) As Long '消息钩子 '[FILE:#FF_PumpHook#|0]
+10009  Function FF_WINMAIN(ByVal hInstance As HINSTANCE) As Long '程序入口函数 '[FILE:#FF_WinMain#|0]
+1000A  Sub FF_WINEND(ByVal hInstance As HINSTANCE) '程序出口，程序终止后的最后代码。 '[FILE:#FF_WinMain#|18]
+1000B  Function ReplaceASM(TiStr As String, TiFind As String, TiRep As String) As String '[FILE:E:\Projects\makevirus\release\CODEGEN_makevirus_UTILITY.inc|344]
