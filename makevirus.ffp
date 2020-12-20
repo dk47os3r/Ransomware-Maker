@@ -1,4 +1,4 @@
-﻿#VisualFreeBasic_Project#  Version=5.4.5
+﻿#VisualFreeBasic_Project#  Version=5.4.10
 NumObjects=5
 ProjectName=makevirus
 CompilationMode=0
@@ -11,25 +11,26 @@ UseGDIPlus=1
 ShowConsole=0
 MultiLanguage=0
 OmitInformation=0
-UseStartupIcon=1
-StartupIcon=
-UseWinXPthemes=1
+UseStartupIcon=-1
+StartupIcon=Res00.ico|ICON_RES00
+UseWinXPthemes=-1
 StrUnicode=0
 UseAdminPriv=0
-DeleteGeneratedCode=1
+DeleteGeneratedCode=0
 AddCompOps=
 LastRunFilename=makevirus.exe
+ImageManager=Res00.ico|ICON|0
 ImageManager=
-Major=1
-Minor=0
+Major=2
+Minor=1
 Revision=0
 Build=0
-FileMajor=1
-FileMinor=0
+FileMajor=2
+FileMinor=1
 FileRevision=0
-FileBuild=80
+FileBuild=131
 AutoIncrement=1
-DefaultCompiler=32
+DefaultCompiler=64
 Comments=
 CompanyName=
 FileDescription=
@@ -38,15 +39,16 @@ LegalTrademarks=
 ProductName=
 
 [Objects]
-Form=.\forms\Form1.frm|0|358|Startup|Yes|
+Form=.\forms\Form1.frm|276|11692|Startup|Yes|
 Resource=.\modules\Resource1.Rc|0|0||Yes|
 
-TopTab=.\forms\Form1.frm|True|0|0|358
-TopTab=#FF_AppStart#|False|0|0|1444
+TopTab=.\forms\Form1.frm|True|1|214|9422
+TopTab=#FF_AppStart#|False|0|4|1476
 TopTab=#FF_PumpHook#|False|0|0|0
-TopTab=#FF_WinMain#|False|0|3|1079
+TopTab=#FF_WinMain#|False|0|5|1079
 TopTab=.\modules\Resource1.Rc|False|0|0|0
 #END_MAIN_PROPERTIES#
+
 
 
 
@@ -66,8 +68,9 @@ TopTab=.\modules\Resource1.Rc|False|0|0|0
 #include Once "afx/CWindow.inc" 'WinFBX 库，是WIN系统增强基础库，使用窗口和控件必须要用到它。
 #include Once "vbcompat.bi"     '一些兼容VB的语句和常数，不包含就会无法使用它们了。
 #include Once "fbthread.bi"     'VisualFreeBasic线程语句支持库，要用线程语句，就必须包含。
-
+#include once "Afx/CIniFile.inc"
 '以上 包含文件 会影响最终编译生成文件的大小，而不会影响运行效率，对于文件大小比较敏感的，可以根据需要调整。
+
 
 
 

