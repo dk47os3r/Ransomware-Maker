@@ -3,7 +3,7 @@
 
 简易使用教程：
 
-1.下载一个[gcc](www.greenxf.com/soft/287588.html)，推荐版本为4.x~9.2
+1.下载一个[gcc](http://www.greenxf.com/soft/287588.html)，推荐版本为4.x~9.2
 
 2.用Everything找到gcc文件的位置，并复制绝对路径
 
